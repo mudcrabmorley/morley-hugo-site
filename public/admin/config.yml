@@ -1,0 +1,17 @@
+backend:
+  name: git
+  repo: mudcrabmorley/morley-hugo-site # Replace with your GitHub repo
+  branch: main # Or the branch you want to use
+
+media_folder: "static/uploads" # Where uploaded files will be stored
+public_folder: "/uploads" # Public path for uploaded files
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

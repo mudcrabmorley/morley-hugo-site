@@ -1,0 +1,8 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "My Hugo Site"
+
+[[menu.main]]
+  name = "Admin"
+  url = "/admin/"
+  weight = 10
